@@ -1,0 +1,66 @@
+.restaurant {
+    background-image: url(../assets/Ellipse3.png), url(../assets/Ellipse4.png), url(../assets/Ellipse5.png); 
+    background-repeat: no-repeat; 
+    padding-bottom: 8rem;
+}
+
+.dishes {
+    background: var( --color-background2); 
+    padding: 4rem 0 8rem 0;
+    background-image: url(../assets/Group-9.png), url(../assets/Group-10.png), url(../assets/Group-12.png), url(../assets/Group-3.png), url(../assets/Group-7.png); 
+    background-repeat: no-repeat; 
+    background-position-y: 1rem, 1rem, 35rem, 38rem, 36rem;
+    background-position-x: 37.5rem, 75rem, 34rem, 89rem, 98rem;
+    background-size: 10%, 9%, 6%, 4%, 6%;
+}
+
+.welcome {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0 15rem 0;
+    background: var( --color-background2); 
+    background-image: url(../assets/Group-11.png), url(../assets/Group-9.png), url(../assets/Group-3.png), url(../assets/Group-12.png), url(../assets/Group-13.png); 
+    background-repeat: no-repeat; 
+    background-position-y: 0, 10rem, 29.5rem, 36rem, 23rem;
+    background-position-x: 52rem, 70rem, 67.5rem, 75rem, 96rem;
+    background-size: 10%, 9%, 4%, 3%, 13%;
+}
+
+.chef {
+    display: flex;
+    gap: 8rem;
+    padding: 7rem 0 7rem 23rem;
+    background-image: url(../assets/Group-5.png), url(../assets/Group-7.png); 
+    background-repeat: no-repeat;
+    background-position-y: 8rem, 3rem;
+    background-size: 4%, 12%;
+    background-position-x: 0, 7rem;
+}
+
+.customers {
+    background: var(--color-background2); 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 29rem;
+    background-image: url(../assets/Group-14.png); 
+    background-repeat: no-repeat;
+    background-size: 25%; 
+    background-position-y: 5rem;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+}
+
+.footer {
+    padding: 3rem 0 10rem 0;
+    background-image: url(../assets/Group-15.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain; 
+}

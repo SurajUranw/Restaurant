@@ -1,0 +1,125 @@
+// colors
+:root {
+    --color-primary: #665899;
+    --color-background1: #ffffff;
+    --color-background2: #F7F7F7; 
+    --color-text1: #111;
+    --color-dark1: #3C4048;
+    --color-nav: #332C39; 
+    --color-btn1: #FF731D;
+    --color-btn2: #181818; 
+    --color-line: #B2B2B2;
+
+    --color-shadow1: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    --transition: all 0.4s; 
+}
+
+@mixin img-round {
+    border: 1px solid var(--color-dark1); 
+    border-radius: 50%;
+    padding: 0.6rem;
+    width: 2.5rem;
+}
+
+@mixin heading-text {
+    color: var(--color-btn2); 
+    line-height: 1.2;
+}
+
+@mixin social-icons {
+    display: flex;
+    margin-right: 1.5rem;
+
+    &__facebook {
+        cursor: pointer;
+        margin-right: 0.7rem;
+        img {
+            width: 2.5rem;
+        }
+    }
+
+    &__instagram {
+        cursor: pointer;
+        margin-right: 0.7rem;
+        img {
+            @include img-round; 
+        }
+    }
+
+    &__twitter {
+        cursor: pointer;
+        img {
+            @include img-round; 
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box; 
+    font-size: 75.5%;          // 1rem = 10px , 10px/16px = 62.5% 
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: var(--color-background1); 
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text1);
+    min-height: 100vh;
+} 
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 1.2rem 0.3rem;
+    color: var(--color-background1); 
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: var(--color-shadow1); 
+}
+
+.btn1 {
+    background: var(--color-btn1);
+    height: 4rem;
+    width: 11rem;
+}
+
+.btn2 {
+    background: var(--color-btn1);
+}
+
+.btn3 {
+    background: var(--color-btn2);
+}
+
+h1 {
+    @include heading-text;
+    font-size: 3rem;
+}
+
+h2 {
+    @include heading-text;
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--color-nav);
+}
+
+.hidden {
+    visibility: hidden;
+}
